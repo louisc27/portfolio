@@ -1,0 +1,168 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Roboto&display=swap');
+
+
+@import './media';
+@import './about';
+@import './navigation';
+@import './services';
+@import './buttons';
+@import './contact';
+@import './footer';
+
+
+
+$primary-color: #333;
+
+
+*{
+    margin:0;
+    padding:0;
+    position:relative;
+    box-sizing:border-box;
+}
+
+canvas {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    height:100%;
+    
+  }
+
+  h1,h2,h3,h4,h5,h6{
+      font-family: 'Open Sans Condensed', sans-serif;
+  }
+p, li {
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: $primary-color;
+    overflow-x:hidden;
+    height:100vh;
+}
+
+
+.content{
+    max-width:600px;
+    margin-bottom:0;
+
+
+    h2{
+        color:#fff;
+        font-size:2.5em;
+
+
+
+        span{
+            color:#40c3ff;
+            font-size:1.2em;
+        }
+    }
+
+    p{
+        font-size:1.2em;
+        color:#fff;
+        font-weight:300;
+    }
+
+   
+}
+
+
+    
+    
+     
+    
+
+
+.my-container-2{
+    height:100%;
+    width:100%;
+    background:#fff;
+    
+}
+
+.action{
+    position:fixed;
+    bottom:50px;
+    left:50px;
+    width:50px;
+    height:50px;
+    background:#fff;
+    cursor:pointer;
+    border-radius:50%;
+    box-shadow:0 5px 5px rgba(0,0,0,0.1);
+    z-index:10000000;
+
+    span{
+        position:relative;
+        width:100%;
+        height:100&;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        color:#a13dea;
+        font-size:2em;
+        transition: 0.3s ease-in-out;
+        z-index:5000;
+
+    }
+    ul{
+        position:absolute;
+        bottom:70px;
+        background:#fff;
+        min-width:250px;
+        padding:20px;
+        border-radius:20px;
+        opacity:0;
+        color:#333;
+        visibility: hidden;
+        transition:0.3s;
+    }
+}
+
+.action.active span{
+    transform:rotate(135deg);
+    
+}
+.action.active ul{
+    bottom:65px;
+    opacity:1;
+    visibility: visible;
+    transition: 0.3s;
+}
+.action.active ul li{
+    list-style:none;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    padding:10px 0;
+    transition:0.3s;
+    color:#333;
+
+    &:hover{
+        font-weight:600;
+    }
+
+a{
+    color:black;
+    text-decoration:none;
+}
+    &:not(:last-child){
+border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    i{
+        margin-right:15px;
+opacity:0.3;
+    }
+}
+.action.active li:hover i{
+    opacity:7;
+}
+
