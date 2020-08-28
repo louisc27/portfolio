@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+  <script src="https://kit.fontawesome.com/0ce3de349f.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" href="./css/style.min.css" type="text/css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="my-container">
+    <!--Banner Section-->
+    <section class="banner" id="sec">
+      <header>
+        <a href="#"class="logo">
+        <!--<img class="img-thumbnail" src="../dist/img/Louis.io Logo.png" >-->
+        Cunningham Dev.
+        </a>
+        <div id="toggle" onclick="toggle()"></div>
+      </header>
+      <div class="content" data-0-top="opacity:0;left:100px;" data-200-top="opacity:1;left:0px;">
+        <h2>Hello World, <br>I'm <span>Louis Cunningham</span></h2>
+        <p>Father. Front End Developer. Future Hokage</p>
+        <a class="neonBtn" href="#about-chapter">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Learn More</a>
+      </div>
+    </section>
+    <!--Banner Section End-->
+    <!--Navigation-->
+    <div id="navigation">
+      <ul class="mainNav">
+        <li data-text="Home"><a href="#" class="navi-class">Home</a></li>
+        <li data-text="About"><a href="#" class="navi-class">About</a></li>
+        <li data-text="Services"><a href="#" class="navi-class">Services</a></li>
+        <li data-text="Portfolio"><a href="#" class="navi-class">Portfolio</a></li>
+        <li data-text="Contact"><a href="#" class="navi-class">Contact</a></li>
+      </ul>
+    </div>
+    <!--Navigation End-->
+
+    <div class="my-container-2">
+
+      <!--About Section-->
+      <section class="about" id="about-chapter" >
+
+        <div class="contentBx">
+          <h2 class="heading" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">About Me</h2>
+          <p class="text" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-500px;"> Enthusiastic and ambitious, I am interested in IT and everything similar. Always envious of creatives and their ability to bring their ideas to life, but at the same time being a very logical individual, I was drawn to web development. The opportunity to bring to life the designs of others, and myself through complex algorithms and bits of code is a dream come true to me. That excitement has led me to dedicate myself to learning every facet of this field . Therefore I am looking for the opportunity to put that practice to work as a Front End Developer. </p>
+        </div>
+        <div class="imgBx" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:200px;"></div>
+
+      </section>
+      <!--About Section End-->
+
+      <!--service section start-->
+      <section class="services">
+        <div class="top-container">
+          <h2 class="heading" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">How can I help you?</h2>
+          <p class="text" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:1;right:200px;">My goal as a Front-end Developer is to help small businesses create an online presence that greatly increases their exposure to target markets.
+            <br>
+            <br>
+            I look forward to helping you create a responsive, mobile-friendly site that engages and retains your target market.</p>
+
+        </div>
+
+        <div class="service-container">
+
+          <div class="serviceBx">
+            <div>
+              <img src="../dist/img/icon1.png" alt="img1">
+              <h2>Design</h2>
+            </div>
+          </div>
+          <div class="serviceBx">
+            <div>
+              <img src="../dist/img/icon2.png" alt="img1">
+              <h2>Development</h2>
+            </div>
+          </div>
+          <div class="serviceBx">
+            <div>
+              <img src="../dist/img/icon3.png" alt="img1">
+              <h2>Branding</h2>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+      <!--Service Section end-->
+      <svg class="wavey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#12222d" fill-opacity="1"
+          d="M0,96L30,122.7C60,149,120,203,180,213.3C240,224,300,192,360,165.3C420,139,480,117,540,106.7C600,96,660,96,720,96C780,96,840,96,900,122.7C960,149,1020,203,1080,192C1140,181,1200,107,1260,80C1320,53,1380,75,1410,85.3L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+        </path>
+      </svg>
+      <!--Technology-->
+
+      <section id="aboutMe">
+
+        <h2 class="heading">Skillset</h2>
+        <div class="container  py-5 px-4 d-flex justify-content-center flex-row flex-wrap" id="app">
+
+
+          <profile data-image="https://static.makeuseof.com/wp-content/uploads/2017/10/html5-whats-new-670x335.jpg">
+            <h1 slot="header">HTML5</h1>
+            <p slot="content">Bootstrap, Responsive Design</p>
+          </profile>
+
+
+          <profile data-image="https://i.udemycdn.com/course/750x422/85702_ca7a_9.jpg">
+            <h1 slot="header">CSS3</h1>
+            <p slot="content">Materialize.css, SASS, SCSS</p>
+          </profile>
+
+
+          <profile
+            data-image="https://4.bp.blogspot.com/-s2EhTt57oeU/XHtQtO1QNLI/AAAAAAAANW8/KYkPQEZUyocSpA2RzqCcVt31imXPi63RACLcBGAs/s1600/Free%2BCourses%2Bto%2Blearn%2BJavaScript.jpg">
+            <h1 slot="header">JavaScript</h1>
+            <p slot="content">JSON, Ajax, Jquery, ES6</p>
+          </profile>
+
+
+          <profile data-image="https://techcrunch.com/wp-content/uploads/2019/01/IMG_20181016_092551.jpg?w=730&crop=1">
+            <h1 slot="header">Git</h1>
+            <p slot="content">Github</p>
+          </profile>
+
+          <profile data-image="https://colorlib.com/wp/wp-content/uploads/sites/2/nodejs-frameworks.png">
+            <h1 slot="header">Node.Js</h1>
+            <p slot="content">Some Mongo Db</p>
+          </profile>
+
+          <profile data-image="https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png">
+            <h1 slot="header">React</h1>
+            <p slot="content">Redux</p>
+          </profile>
+
+
+          <profile data-image="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/04/11-4-1100x550.jpg">
+            <h1 slot="header">Wordpress</h1>
+            <p slot="content">Theme development</p>
+          </profile>
+
+
+          <profile data-image="https://limemicro.com/app/uploads/2019/01/ubuntu-logo-2.jpg">
+            <h1 slot="header">Linux/ Ubuntu</h1>
+            <p slot="content">Command Line</p>
+          </profile>
+
+
+          <profile data-image="https://ih0.redbubble.net/image.586705185.6992/flat,550x550,075,f.u5.jpg">
+            <h1 slot="header">NPM</h1>
+            <p slot="content">Webpack, Babel</p>
+          </profile>
+
+          <profile data-image="https://www.maketecheasier.com/assets/uploads/2016/05/cmdtools-featured-800x343.png">
+            <h1 slot="header">Command Line</h1>
+            <p slot="content">Git Bash, Linux/Ubuntu</p>
+          </profile>
+
+
+        </div>
+
+      </section>
+      <!--Technology End-->
+      <!--floating action section-->
+      <div class="action" onclick="actionToggle();">
+        <span>+</span>
+        <ul>
+          <li> <a href="#"><i class="fab fa-facebook-square fa-2x"></i>Share on Facebook</a> </li>
+          <li><a href="#"><i class="fab fa-twitter-square fa-2x"></i>Share on Twitter</a> </li>
+          <li><a href="#"><i class="fab fa-youtube fa-2x"></i> Share on Youtube</a></li>
+          <li><a href="#"><i class="fab fa-linkedin fa-2x"></i> Share on Linkedin</a></li>
+          <li><a href="#"><i class="fab fa-google-plus-square fa-2x"></i>Share on Google Plus</a></li>
+        </ul>
+      </div>
+      <!--floating action Section End-->
+      <!--Portfolio start-->
+      <!-- Portfolio -->
+      <section class="content-section mt-5" id="portfolio">
+        <div class="container-fluid">
+          <div class="content-section-heading text-center mt-5">
+
+            <h2 class="mb-5">Recent Projects</h2>
+          </div>
+          <div class="row no-gutters w-100 mx-1">
+            <div class="col-lg-4" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-500px;">
+              <a class="portfolio-item" target="_blank" href="https://codepen.io/trafalgarbob/pen/MNeepO">
+                <span class="caption">
+                  <span class="caption-content">
+                    <h2>Language Translator</h2>
+                    <p class="mb-0">Built using HTML and Javascript</p>
+                  </span>
+                </span>
+
+                <img src="./img/FireShot Capture 039 - translator - codepen.io.png" alt="" class="img-fluid">
+
+              </a>
+            </div>
+            <div class="col-lg-4" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-500px;">
+              <a class="portfolio-item" target="_blank" href="https://codepen.io/LouisC27/pen/oNxZxOV">
+                <span class="caption">
+                  <span class="caption-content">
+                    <h2>Relaxation App</h2>
+                    <p class="mb-0">Pure HTML, CSS and Javascript</p>
+                  </span>
+                </span>
+                <img class="img-fluid" src="./img/FireShot Capture 042 - Relaxation app - codepen.io.png" alt="project-2">
+              </a>
+            </div>
+            <div class="col-lg-4" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-500px;">
+              <a class="portfolio-item" target="_blank" href="https://codepen.io/LouisC27/pen/mdPWPob">
+                <span class="caption">
+                  <span class="caption-content">
+                    <h2>Hangman</h2>
+                    Hangman game built using Vanilla JS
+                  </span>
+                </span>
+                <img class="img-fluid" src="./img/FireShot Capture 045 - Hangman - codepen.io.png" alt="">
+              </a>
+            </div>
+            <div class="col-lg-4" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-500px;">
+              <a class="portfolio-item" target="_blank" href="https://codepen.io/LouisC27/full/vYGxGPo">
+                <span class="caption">
+                  <span class="caption-content">
+                    <h2>Minesweeper</h2>
+                    <p class="mb-0">Built using Vanilla JS</p>
+                  </span>
+                </span>
+                <img class="img-fluid" src="./img/FireShot Capture 054 - Minesweeper - codepen.io.png" alt="">
+              </a>
+            </div>
+            <div class="col-lg-4" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-500px;">
+              <a class="portfolio-item" target="_blank" href="https://codesandbox.io/s/the-weather-app-15krc?file=/index.html">
+                <span class="caption">
+                  <span class="caption-content">
+                    <h2>Reimagined Weather App</h2>
+                    <p class="mb-0">Built using HTML, SASS & JS</p>
+                  </span>
+                </span>
+                <img class="img-fluid" src="./img/FireShot Capture 048 - weather - 15krc.csb.app.png" alt="">
+              </a>
+            </div>
+            <div class="col-lg-4" data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-500px;">
+              <a class="portfolio-item" target="_blank" href="https://codesandbox.io/s/recipe-app-4ue78">
+                <span class="caption">
+                  <span class="caption-content">
+                    <h2>Recipe App</h2>
+                    <p>Built using HTML, CSS & React</p>
+                    </span>
+                </span>
+                <img class="img-fluid" src="./img/FireShot Capture 051 - React App - 4ue78.csb.app.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--portfolio end-->
+
+
+      <section class="contact">
+        <h1 class="section-header">CONTACT</h1>
+
+        <div class="contact-wrapper">
+
+          <!---------------- 
+    
+          CONTACT PAGE LEFT 
+        
+          ----------------->
+
+          <form class="form-horizontal" role="form" method="post" action="./contact.php">
+
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
+              </div>
+            </div>
+
+            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+              <div class="button">
+                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+              </div>
+
+            </button>
+
+          </form>
+
+          <!---------------- 
+    
+          CONTACT PAGE RIGHT 
+        
+          ----------------->
+
+          <div class="direct-contact-container">
+
+            <ul class="contact-list">
+              <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Washington |
+                    D.C.</span></i></li>
+
+              <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
+                      href="tel:1-240-610-5753" title="Give me a call">(240) 610-5753</a></span></i></li>
+
+              <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#"
+                      title="Send me an email">louisc27@outlook.com</a></span></i></li>
+
+            </ul>
+
+            <hr>
+            <ul class="social-media-list">
+              <li><a href="https://github.com/louisc27" target="_blank" class="contact-icon">
+                  <i class="fab fa-github" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="https://twitter.com/TrafalgarBob" target="_blank" class="contact-icon">
+                  <i class="fab fa-twitter" aria-hidden="true"></i></a>
+              </li>
+              
+              <li><a href="https://www.linkedin.com/in/rclouis24/" target="_blank" class="contact-icon">
+                  <i class="fab fa-linkedin" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="https://codepen.io/LouisC27" target="_blank" class="contact-icon">
+                <i class="fab fa-codepen" aria-hidden="true"></i></a>
+            </li>
+            </ul>
+            <hr>
+
+            
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="footer">
+        <p class="text">Developed by Louis Cunningham Jr.</p>
+        
+
+      </section>
+    </div>
+
+
+
+
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.js"
+    integrity="sha256-+5R1zw/Tcxp82QhhfAJlicTeM4LCzFxp6EvsZW3V9bE=" crossorigin="anonymous"></script>
+  <script src="../dist/js/index.js"></script>
+  <script src="../dist/js/skrollr.js"></script>
+  <script type="text/javascript">
+  var s = skrollr.init(); 
+  </script>
+  <script type="text/javascript">
+    function actionToggle() {
+      var action = document.querySelector('.action');
+      action.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>
